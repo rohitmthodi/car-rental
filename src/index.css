@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import "tailwindcss";
+
+
+.font-bungee {
+  font-family: "Bungee", sans-serif;
+}
+
+@theme {
+    --color-primary: #168AA3;
+    --color-secondary: #84CC16;
+    --color-bg: #EAF6FF;
+}
+
+/* HIDDEN SCROLLBAR */
+html, body {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
