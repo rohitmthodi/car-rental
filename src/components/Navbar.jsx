@@ -76,13 +76,13 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* ================= MOBILE DRAWER ================= */}
+      {/* MOBILE DRAWER */}
       <div
         className={`fixed inset-0 z-50 transition ${
           openMenu ? "visible" : "invisible"
         }`}
       >
-        {/* overlay */}
+        {/* OVERLAY */}
         <div
           onClick={() => setOpenMenu(false)}
           className={`absolute inset-0 bg-black/40 transition-opacity ${
@@ -90,13 +90,13 @@ const Navbar = () => {
           }`}
         />
 
-        {/* drawer */}
+        {/* DRAWER */}
         <div
           className={`absolute right-0 top-0 h-full w-72 bg-white shadow-xl p-5 transform transition-transform duration-300 ${
             openMenu ? "translate-x-0" : "translate-x-full"
           }`}
         >
-          {/* header */}
+          {/* HEADER */}
           <div className="flex items-center justify-between mb-6">
             <img src={logo} alt="logo" className="h-6" />
             <button onClick={() => setOpenMenu(false)}>
@@ -104,7 +104,7 @@ const Navbar = () => {
             </button>
           </div>
 
-          {/* menu links */}
+          {/* MENU LINKS */}
           <div className="flex flex-col gap-4 text-slate-700 font-medium">
             {menuLinks.map((item, index) => (
               <Link
@@ -117,7 +117,7 @@ const Navbar = () => {
             ))}
           </div>
 
-          {/* search */}
+          {/* SEARCH */}
           <div className="mt-6 flex items-center border rounded-full py-2 px-3">
             <IoSearchOutline className="text-gray-500" />
             <input
@@ -130,7 +130,7 @@ const Navbar = () => {
             />
           </div>
 
-          {/* actions */}
+          {/* ACTIONS */}
           <div className="mt-6 flex flex-col gap-3">
             <button
               onClick={() => {

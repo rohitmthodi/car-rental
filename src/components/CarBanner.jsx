@@ -33,6 +33,7 @@ const CarBanner = () => {
           <img
             src={car_banner_image}
             alt="Luxury Car"
+            loading="lazy"
             className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg object-contain"
           />
         </div>

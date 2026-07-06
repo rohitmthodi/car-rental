@@ -79,6 +79,7 @@ const Testimonials = () => {
                 <img
                   src={testimonial.image}
                   alt={testimonial.name}
+                  loading="lazy"
                   className="w-11 h-11 rounded-full object-cover ring-1 ring-gray-200"
                 />
 
